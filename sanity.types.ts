@@ -237,7 +237,6 @@ export type Ingredient = {
   _rev: string;
   name?: string;
   type?: "dry" | "wet" | "other";
-  matpratName?: string;
   weights?: IngredientWeights;
 };
 
@@ -872,7 +871,6 @@ export type AllIngredientsQueryResult = Array<{
   _rev: string;
   name?: string;
   type?: "dry" | "other" | "wet";
-  matpratName?: string;
   weights?: IngredientWeights;
 }>;
 

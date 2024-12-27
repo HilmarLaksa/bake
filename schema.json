@@ -1427,14 +1427,7 @@
           ]
         },
         "optional": true
-      },
-      "matpratName": {
-        "type": "objectAttribute",
-        "value": {
-          "type": "string"
-        },
-        "optional": true
-      },
+      },      
       "weights": {
         "type": "objectAttribute",
         "value": {

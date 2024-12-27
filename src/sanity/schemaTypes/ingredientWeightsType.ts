@@ -6,7 +6,7 @@ const fields = [
     type: "number",
     description: "Amount of grams in one liter.",
     readOnly: ({ document }) => {
-      return !!document?.matpratName;
+      return false;
     },
   }),
   defineField({
@@ -14,7 +14,7 @@ const fields = [
     type: "number",
     description: "Amount of grams in one tablespoon. (ss)",
     readOnly: ({ document }) => {
-      return !!document?.matpratName;
+      return false;
     },
   }),
   defineField({
@@ -22,7 +22,7 @@ const fields = [
     type: "number",
     description: "Amount of grams in one teaspoon. (ts)",
     readOnly: ({ document }) => {
-      return !!document?.matpratName;
+      return false;
     },
   }),
 ];
