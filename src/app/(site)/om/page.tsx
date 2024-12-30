@@ -4,7 +4,7 @@ import { aboutQuery } from "@/sanity/lib/queries";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Om bakdel",
+  title: "Om TheFoodDude",
 };
 
 export default async function Page() {

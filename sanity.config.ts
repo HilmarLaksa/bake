@@ -24,7 +24,7 @@ import { aboutType } from "@/sanity/schemaTypes/singletons/aboutType";
 const singletonTypes = [homeType, aboutType];
 
 export default defineConfig({
-  title: "Bakdel studio",
+  title: "TheFoodDude studio",
   basePath: "/studio",
   projectId,
   dataset,

@@ -64,8 +64,8 @@ export async function generateMetadata(): Promise<Metadata> {
 
   return {
     title: {
-      default: "Bakdel",
-      template: "%s | Bakdel",
+      default: "TheFoodDude",
+      template: "%s | TheFoodDude",
     },
     keywords: [
       "bake",
@@ -114,7 +114,7 @@ export async function generateMetadata(): Promise<Metadata> {
       "max-video-preview": -1,
       googleBot: "index, follow",
     },
-    applicationName: "Bakdel",
+    applicationName: "TheFoodDude",
     icons: {
       icon: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍞</text></svg>",
     },
@@ -140,7 +140,7 @@ export default async function RootLayout({
   const jsonLd: WithContext<WebSite> = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: "Bakdel",
+    name: "TheFoodDude",
     description: homeSeo?.seo?.metaDescription ?? "",
     url: siteUrl,
     potentialAction: searchAction,
@@ -165,10 +165,10 @@ export default async function RootLayout({
         </ThemeProvider>
 
         <JsonLd jsonLd={jsonLd} />
-        <Script
+        {/* <Script
           strategy="lazyOnload"
           src="https://app.tinyanalytics.io/pixel/YRE2eBbx3BUYqOdv"
-        />
+        /> */}
         <SanityLive />
         {draftModeEnabled && (
           <>

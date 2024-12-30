@@ -7,7 +7,7 @@ import { ArrowRightIcon } from "@radix-ui/react-icons";
 import { Home, HomePageQueryResult } from "../../../../sanity.types";
 import { useOptimistic } from "next-sanity/hooks";
 import { SanityDocument } from "next-sanity";
-import { createTypedDataAttribute } from "@/sanity/utils";
+// import { createTypedDataAttribute } from "@/sanity/utils";
 import { RecipesGridWrapper } from "@/components/RecipesGrid/RecipesGridWrapper";
 import { RecipesGridElement } from "@/components/RecipesGrid/RecipesGridElement";
 
@@ -42,8 +42,7 @@ export const HomePage = (props: HomePageProps) => {
     <main className="sm:mt-35 mt-8 flex flex-col gap-10 px-6 sm:mt-16 sm:items-center sm:gap-16">
       <div className="flex max-w-3xl flex-col gap-3 sm:text-center">
         <TypographyH1>
-          Bak<span className="text-4xl font-extralight text-gray-400">&</span>
-          del 🧑‍🍳
+          TheFoodDude
         </TypographyH1>
         <p className="text-2xl">{subtitle}</p>
       </div>
@@ -52,7 +51,7 @@ export const HomePage = (props: HomePageProps) => {
         <TypographyH2>Oppskrifter</TypographyH2>
 
         <div className="flex flex-col gap-4">
-          <RecipesGridWrapper
+          {/* <RecipesGridWrapper
             data-sanity={createTypedDataAttribute<Home>(_id, _type, "recipes")}
           >
             {recipes?.map((recipe, i) => {
@@ -69,7 +68,7 @@ export const HomePage = (props: HomePageProps) => {
                 />
               );
             })}
-          </RecipesGridWrapper>
+          </RecipesGridWrapper> */}
 
           <TypographyLink
             href="/oppskrifter"

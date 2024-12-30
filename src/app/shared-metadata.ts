@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 
-export const siteName = "Bakdel.no";
-export const siteUrl = "https://www.bakdel.no";
-export const creator = "Dag Stuan";
+export const siteName = "TheFoodDude.dk";
+export const siteUrl = "https://www.TheFoodDude.dk";
+export const creator = "Steffen Jespersen";
 
 export const openGraphMetadata: Metadata["openGraph"] = {
-  locale: "no_NO",
+  locale: "da_DK",
   type: "website",
   url: siteUrl,
   siteName,

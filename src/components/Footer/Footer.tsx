@@ -12,30 +12,16 @@ export const Footer = () => {
         <div className="flex flex-col items-center justify-between md:flex-row">
           <div className="mb-4 md:mb-0">
             <p className="text-base text-secondary-foreground">
-              Laget av Dag Stuan
+              Lavet af TheFoodDude
             </p>
           </div>
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-4">          
             <Link
-              href="mailto:d.stuan@gmail.com"
-              className="text-secondary-foreground hover:text-primary"
-            >
-              <EnvelopeClosedIcon className="h-5 w-5" />
-              <span className="sr-only">Email</span>
-            </Link>
-            <Link
-              href="https://www.instagram.com/dagstuan"
+              href="https://www.instagram.com/thefooddude.dk/"
               className="text-secondary-foreground hover:text-primary"
             >
               <InstagramLogoIcon className="h-5 w-5" />
               <span className="sr-only">Instagram</span>
-            </Link>
-            <Link
-              href="https://github.com/dagstuan"
-              className="text-secondary-foreground hover:text-primary"
-            >
-              <GitHubLogoIcon className="h-5 w-5" />
-              <span className="sr-only">GitHub</span>
             </Link>
           </div>
         </div>
