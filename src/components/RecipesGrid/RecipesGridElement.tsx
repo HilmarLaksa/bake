@@ -32,7 +32,7 @@ export const RecipesGridElement = ({
   return (
     <Link
       data-sanity={dataSanity}
-      href={`/oppskrifter/${slug}`}
+      href={`/opskrifter/${slug}`}
       key={_id}
       className={cn("flex flex-col justify-between", className)}
     >

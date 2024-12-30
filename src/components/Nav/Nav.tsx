@@ -40,11 +40,11 @@ export const Nav = () => {
           </li>
           <li>
             <NavLink
-              href="/oppskrifter"
+              href="/opskrifter"
               prefetch
-              active={pathname.startsWith("/oppskrifter")}
+              active={pathname.startsWith("/opskrifter")}
             >
-              Oppskrifter
+              Opskrifter
             </NavLink>
           </li>
           <li>

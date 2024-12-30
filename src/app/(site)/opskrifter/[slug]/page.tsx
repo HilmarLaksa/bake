@@ -59,7 +59,7 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
       openGraph: {
         ...openGraphMetadata,
         title: seo?.metaTitle ?? title ?? "",
-        url: `${siteUrl}/oppskrifter/${params.slug}`,
+        url: `${siteUrl}/opskrifter/${params.slug}`,
         images: imageUrl
           ? [
               {

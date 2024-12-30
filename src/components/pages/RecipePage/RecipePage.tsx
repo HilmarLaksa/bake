@@ -25,7 +25,7 @@ export const RecipePage = (props: RecipePageProps) => {
     "@type": "Recipe",
     name: recipe.seo?.metaTitle ?? recipe.title ?? "",
     description: recipe.seo?.metaDescription ?? "",
-    url: `${siteUrl}/oppskrifter/${params.slug}`,
+    url: `${siteUrl}/opskrifter/${params.slug}`,
     datePublished: recipe._createdAt,
     author: {
       "@type": "Person",

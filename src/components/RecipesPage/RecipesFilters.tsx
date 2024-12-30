@@ -69,7 +69,7 @@ export const RecipesFilters = (props: RecipesFiltersProps) => {
           <MagnifyingGlassIcon className="absolute left-3 top-1/2 -translate-y-1/2 transform text-gray-500" />
           <Input
             type="text"
-            placeholder="Søk..."
+            placeholder="Søg..."
             className="w-full pl-10"
             onChange={(e) => {
               handleInputChange(e.target.value);

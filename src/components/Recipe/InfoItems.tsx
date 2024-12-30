@@ -21,9 +21,9 @@ export const InfoItems = ({
     <div className="flex flex-col flex-wrap gap-2">
       <InfoItem
         icon={<CakeSliceIcon />}
-        label="Antall"
+        label="Antal"
         value={formatAmount(servings, undefined)}
-        info="Antall porsjoner du får."
+        info="Antal portioner du får."
       />
 
       {activeTime && (
@@ -31,7 +31,7 @@ export const InfoItems = ({
           icon={<CookingPotIcon />}
           label="Aktiv tid"
           value={formatDurationType(activeTime)}
-          info="Aktiv tidsbruk som kreves for å lage oppskriften."
+          info="Aktiv tidsforbrug som det tager at lave opskriften."
         />
       )}
 
@@ -40,7 +40,7 @@ export const InfoItems = ({
           icon={<ClockIcon />}
           label="Total tid"
           value={formatDurationType(totalTime)}
-          info="Total tidsbruk fra du starter til retten er ferdig."
+          info="Total tidsforbrug fra du starter til retten er færdig."
         />
       )}
     </div>

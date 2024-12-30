@@ -123,12 +123,12 @@ export const WakeLockToggle = (): React.JSX.Element | null => {
 
   return (
     <div className="flex items-center justify-between rounded-lg border bg-background px-4 py-2">
-      <Label htmlFor="wake-lock-toggle">Behold skjermen på</Label>
+      <Label htmlFor="wake-lock-toggle">Undgå at skærmen slukker</Label>
       <Switch
         id="wake-lock-toggle"
         disabled={!isServer && !isSupported}
         checked={checked}
-        title="Behold skjermen på"
+        title="Undgå at skærmen slukker"
         onCheckedChange={handleCheckedChange}
       />
     </div>

@@ -93,7 +93,7 @@ export const IngredientsTable = (props: IngredientsTableProps) => {
           </TableHead>
           <TableHead>Ingrediens</TableHead>
           {anyWithAmount && (
-            <TableHead className="text-right">Mengde</TableHead>
+            <TableHead className="text-right">Mængde</TableHead>
           )}
         </TableRow>
       </TableHeader>
@@ -110,7 +110,7 @@ export const IngredientsTable = (props: IngredientsTableProps) => {
                   <Checkbox
                     id={checkboxId}
                     checked={isComplete}
-                    title={`Marker ${name.toLowerCase()} som fullført`}
+                    title={`Marker ${name.toLowerCase()} som fuldført`}
                     onCheckedChange={(checked) => {
                       if (checked === "indeterminate") return;
 

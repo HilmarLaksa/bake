@@ -14,7 +14,6 @@ import {
   siteUrl,
   twitterMetadata,
 } from "../shared-metadata";
-import Script from "next/script";
 import dynamic from "next/dynamic";
 import { sanityFetch } from "@/sanity/lib/live";
 import { ThemeProvider } from "next-themes";
@@ -71,9 +70,8 @@ export async function generateMetadata(): Promise<Metadata> {
       "bake",
       "mat",
       "baking",
-      "oppskrifter",
-      "bakeoppskrifter",
-      "matoppskrifter",
+      "opskrifter",
+      "bakeopskrifter",
       "skalere",
       "skalerbare",
       "skalerbar",
@@ -116,14 +114,14 @@ export async function generateMetadata(): Promise<Metadata> {
     },
     applicationName: "TheFoodDude",
     icons: {
-      icon: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍞</text></svg>",
+      icon: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'> </text></svg>",
     },
   };
 }
 
 const searchAction = {
   "@type": "SearchAction",
-  target: `${siteUrl}/oppskrifter?query={search_term_string}`,
+  target: `${siteUrl}/opskrifter?query={search_term_string}`,
   "query-input": "required name=search_term_string",
 } satisfies SearchAction & { "query-input": string };
 

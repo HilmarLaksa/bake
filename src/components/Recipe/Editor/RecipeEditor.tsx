@@ -65,24 +65,24 @@ export const RecipeEditor = ({
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
       <DialogTrigger asChild>
         <Button variant="default" className={triggerClassName}>
-          Rediger oppskrift
+          Rediger opskrift
         </Button>
       </DialogTrigger>
       <DialogContent className="my-10 sm:max-w-lg">
         <DialogHeader>
-          <DialogTitle>Rediger oppskrift</DialogTitle>
+          <DialogTitle>Rediger opskrift</DialogTitle>
           <DialogDescription>
-            Her kan du redigere oppskriften. Du kan enten velge å skalere hele
-            oppskriften ved å endre på &quot;Antall&quot;, eller skalere en
-            enkeltingrediens ved å bruke feltene nedenfor. Hvis du skalerer med
-            en enkeltingrediens vil resten av ingrediensene oppdatere seg til å
+            Her kan du redigere opskriften. Du kan enten vælge at skalere hele
+            opskriften ved at ændre &quot;Mængde&quot;, eller skalere en
+            enkelt ingrediens ved hjælp af felterne nedenfor. Hvis du skalerer med
+            en enkelt ingrediens, vil resten af ingredienserne opdatere til
             passe.
           </DialogDescription>
         </DialogHeader>
         <div className="grid gap-8 py-4">
           <div className="flex items-center gap-4">
             <Label htmlFor="servings" className="text-right">
-              Antall
+              Antal
             </Label>
             <div className="col-span-3 flex items-center gap-2">
               <Button
@@ -118,7 +118,7 @@ export const RecipeEditor = ({
                 variant="outline"
                 onClick={handleAllIngredientsToGramClick}
               >
-                Sett alle til gram
+                Sæt alle til gram
               </Button>
             </div>
 
@@ -126,8 +126,8 @@ export const RecipeEditor = ({
               <TableHeader>
                 <TableRow>
                   <TableHead className="w-[40%]">Ingrediens</TableHead>
-                  <TableHead className="w-[30%]">Mengde</TableHead>
-                  <TableHead className="w-[30%]">Enhet</TableHead>
+                  <TableHead className="w-[30%]">Mængde</TableHead>
+                  <TableHead className="w-[30%]">Enhed</TableHead>
                 </TableRow>
               </TableHeader>
               <TableBody>
@@ -145,10 +145,10 @@ export const RecipeEditor = ({
         </div>
         <DialogFooter>
           <Button type="button" variant="outline" onClick={onReset}>
-            Tilbakestill
+            Nulstil
           </Button>
           <Button type="submit" onClick={handleSave}>
-            Lagre
+            Gem
           </Button>
         </DialogFooter>
       </DialogContent>

@@ -6,7 +6,7 @@ import {
 
 const mainDocuments = defineDocuments([
   {
-    route: "/oppskrifter/:slug",
+    route: "/opskrifter/:slug",
     filter: `_type == "recipe" && slug.current == $slug`,
   },
   {
@@ -29,11 +29,11 @@ const locations = {
       locations: [
         {
           title: doc?.title ?? "Untitled",
-          href: `/oppskrifter/${doc?.slug}`,
+          href: `/opskrifter/${doc?.slug}`,
         },
         {
-          title: "Alle oppskrifter",
-          href: "/oppskrifter",
+          title: "Alle opskrifter",
+          href: "/opskrifter",
         },
       ],
     }),

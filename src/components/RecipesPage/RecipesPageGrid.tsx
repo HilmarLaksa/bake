@@ -84,15 +84,15 @@ export const RecipesPageGrid = ({
         >
           {isLoading ? (
             <>
-              <SpinnerIcon className="h-5 w-5 animate-spin" /> Laster...
+              <SpinnerIcon className="h-5 w-5 animate-spin" /> Indlæser...
             </>
           ) : (
-            "Hent flere oppskrifter"
+            "Hent flere opskrifter"
           )}
         </Button>
       ) : recipesList.length > 0 ? (
         <p className="mx-auto flex h-9 items-center text-muted-foreground">
-          Ingen flere oppskrifter.
+          Ikke flere opskrifter.
         </p>
       ) : null}
     </div>

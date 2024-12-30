@@ -16,10 +16,10 @@ export const NoRecipes = ({ isTransitionPending }: NoRecipesProps) => {
     >
       <HeartCrackIcon className="mx-auto h-12 w-12 text-gray-400" />
       <TypographyH2 className="text-gray-900">
-        Ingen oppskrifter funnet!
+        Ingen opskrifter fundet!
       </TypographyH2>
       <TypographyP className="mt-2 text-gray-500">
-        Klarte ikke å finne noen oppskrifter som passer til det du søkte etter.
+        Fandt ingen opskrifter som passer til det som du søgte.
       </TypographyP>
     </div>
   );

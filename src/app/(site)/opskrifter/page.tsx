@@ -10,7 +10,7 @@ import { allCategoriesQuery } from "@/sanity/lib/queries";
 import { Metadata } from "next/types";
 
 export const metadata: Metadata = {
-  title: "Alle oppskrifter",
+  title: "Alle opskrifter",
 };
 
 export default async function Page(props: {

@@ -17,7 +17,6 @@ import { Alert, AlertDescription, AlertTitle } from "../ui/alert";
 import { InfoCircledIcon } from "@radix-ui/react-icons";
 import { ScalableRecipeNumber } from "./ScalableRecipeNumber";
 import { TypographyH3 } from "../Typography/TypographyH3";
-import { TypographyLink } from "../Typography/TypographyLink";
 import { IngredientsTable } from "./IngredientsTable";
 import { TypographyH4 } from "../Typography/TypographyH4";
 import { TypographyH2 } from "../Typography/TypographyH2";
@@ -110,7 +109,7 @@ export const RecipeContent = ({ recipe }: RecipeContentProps) => {
                     variant="outline"
                     onClick={handleReset}
                   >
-                    Tilbakestill
+                    Nulstil
                   </Button>
                 </div>
 
@@ -152,24 +151,18 @@ export const RecipeContent = ({ recipe }: RecipeContentProps) => {
             </Card>
           </div>
           <div className="col-span-full align-baseline md:col-span-8">
-            <TypographyH2>Fremgangsmåte</TypographyH2>
+            <TypographyH2>Fremgangsmåde</TypographyH2>
 
             {parseFloat(scaleFactor.toFixed(2)) !== 100 && (
               <Alert className="my-4">
                 <InfoCircledIcon />
-                <AlertTitle>Skalert oppskrift</AlertTitle>
+                <AlertTitle>Skaleret opskrift</AlertTitle>
                 <AlertDescription>
-                  Denne oppskriften er skalert{" "}
-                  {scaleFactor > 100 ? "opp til" : "ned til"}{" "}
-                  {formatAmount(scaleFactor, "%", "0")} av original oppskrift.{" "}
-                  <TypographyLink
-                    type="external"
-                    href="mailto:d.stuan@gmail.com"
-                  >
-                    Ta kontakt
-                  </TypographyLink>{" "}
-                  hvis den skalerte oppskriften ikke gir mening eller noen av
-                  ingrediensene ikke blir riktig skalert.
+                  Denne opskriften er skaleret{" "}
+                  {scaleFactor > 100 ? "op til" : "ned til"}{" "}
+                  {formatAmount(scaleFactor, "%", "0")} av original opskrift.{" "}
+                  
+                  Hvis den skalerede opskrift ikke giver mening eller at nogle af ingredienserne ikke bliver korrekt skaleret.
                 </AlertDescription>
               </Alert>
             )}

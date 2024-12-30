@@ -23,7 +23,7 @@ export const resolveDocumentProductionUrl = async (
 
   switch (doc?._type) {
     case recipeTypeName:
-      return `/oppskrifter/${doc.slug}`;
+      return `/opskrifter/${doc.slug}`;
     case "category":
       return `/kategorier/${doc.slug}`;
     case homeType.name:

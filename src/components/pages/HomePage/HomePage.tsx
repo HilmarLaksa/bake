@@ -4,39 +4,35 @@ import { TypographyH1 } from "@/components/Typography/TypographyH1";
 import { TypographyH2 } from "@/components/Typography/TypographyH2";
 import { TypographyLink } from "@/components/Typography/TypographyLink";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
-import { Home, HomePageQueryResult } from "../../../../sanity.types";
-import { useOptimistic } from "next-sanity/hooks";
-import { SanityDocument } from "next-sanity";
+// import { Home, HomePageQueryResult } from "../../../../sanity.types";
+// import { useOptimistic } from "next-sanity/hooks";
+// import { SanityDocument } from "next-sanity";
 // import { createTypedDataAttribute } from "@/sanity/utils";
-import { RecipesGridWrapper } from "@/components/RecipesGrid/RecipesGridWrapper";
-import { RecipesGridElement } from "@/components/RecipesGrid/RecipesGridElement";
 
-interface HomePageProps {
-  data: HomePageQueryResult;
-}
+// interface HomePageProps {
+//   data: HomePageQueryResult;
+// }
 
-const isHomePage = (data: SanityDocument): data is Home => {
-  return data._type === "home" && (data as Home).recipes !== undefined;
-};
+// const isHomePage = (data: SanityDocument): data is Home => {
+//   return data._type === "home" && (data as Home).recipes !== undefined;
+// };
 
-export const HomePage = (props: HomePageProps) => {
-  const { _id, _type, subtitle, recipes: initialRecipes } = props.data ?? {};
+export const HomePage = () => {  
+  // const recipes = useOptimistic(initialRecipes, (currentRecipes, action) => {
+  //   const document = action.document;
+  //   if (
+  //     action.id === _id &&
+  //     action.type === "mutate" &&
+  //     isHomePage(document) &&
+  //     document.recipes
+  //   ) {
+  //     return document.recipes
+  //       .map((recipe) => currentRecipes?.find((r) => r._key === recipe._key))
+  //       .filter((r) => r !== undefined);
+  //   }
 
-  const recipes = useOptimistic(initialRecipes, (currentRecipes, action) => {
-    const document = action.document;
-    if (
-      action.id === _id &&
-      action.type === "mutate" &&
-      isHomePage(document) &&
-      document.recipes
-    ) {
-      return document.recipes
-        .map((recipe) => currentRecipes?.find((r) => r._key === recipe._key))
-        .filter((r) => r !== undefined);
-    }
-
-    return currentRecipes;
-  });
+  //   return currentRecipes;
+  // });
 
   return (
     <main className="sm:mt-35 mt-8 flex flex-col gap-10 px-6 sm:mt-16 sm:items-center sm:gap-16">
@@ -44,11 +40,11 @@ export const HomePage = (props: HomePageProps) => {
         <TypographyH1>
           TheFoodDude
         </TypographyH1>
-        <p className="text-2xl">{subtitle}</p>
+        {/* <p className="text-2xl">{subtitle}</p> */}
       </div>
 
       <div className="w-full max-w-6xl">
-        <TypographyH2>Oppskrifter</TypographyH2>
+        <TypographyH2>Opskrifter</TypographyH2>
 
         <div className="flex flex-col gap-4">
           {/* <RecipesGridWrapper
@@ -71,11 +67,11 @@ export const HomePage = (props: HomePageProps) => {
           </RecipesGridWrapper> */}
 
           <TypographyLink
-            href="/oppskrifter"
+            href="/opskrifter"
             type="internal"
             className="flex items-center gap-1 self-end"
           >
-            Se alle oppskrifter <ArrowRightIcon />
+            Se alle opskrifter <ArrowRightIcon />
           </TypographyLink>
         </div>
       </div>

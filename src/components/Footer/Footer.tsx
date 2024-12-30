@@ -1,6 +1,4 @@
-import {
-  EnvelopeClosedIcon,
-  GitHubLogoIcon,
+import {  
   InstagramLogoIcon,
 } from "@radix-ui/react-icons";
 import Link from "next/link";
